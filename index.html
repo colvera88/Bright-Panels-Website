@@ -17,12 +17,10 @@
   <link rel="canonical" href="https://brightpanelssolar.com/">
 
   <meta property="og:title" content="Bright Panels Solar Cleaning">
-
   <meta
     property="og:description"
     content="Professional solar panel cleaning, bird proofing, and window washing throughout northern Los Angeles County."
   >
-
   <meta property="og:url" content="https://brightpanelssolar.com/">
   <meta property="og:type" content="website">
   <meta
@@ -32,43 +30,23 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bright Panels Solar Cleaning">
-
   <meta
     name="twitter:description"
     content="Professional solar panel cleaning throughout the Antelope Valley, Santa Clarita Valley, and San Fernando Valley."
   >
-
   <meta
     name="twitter:image"
     content="https://brightpanelssolar.com/header-solar-cleaning.jpg"
   >
 
   <link rel="icon" href="/favicon.ico?v=7" sizes="any">
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/favicon-32x32.png?v=7"
-  >
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="/favicon-16x16.png?v=7"
-  >
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="/apple-touch-icon.png?v=7"
-  >
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=7">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=7">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=7">
   <link rel="manifest" href="/site.webmanifest?v=7">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap"
@@ -77,14 +55,11 @@
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZDJM22YXJ"></script>
-
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
-
     gtag("js", new Date());
     gtag("config", "G-2ZDJM22YXJ");
   </script>
@@ -297,10 +272,6 @@
       text-decoration: none;
     }
 
-    .top-bar a:hover {
-      color: var(--yellow-light);
-    }
-
     .site-header {
       position: sticky;
       top: 0;
@@ -343,26 +314,8 @@
       text-decoration: none;
     }
 
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -8px;
-      left: 0;
-      height: 2px;
-      background: var(--yellow);
-      transform: scaleX(0);
-      transition: transform 0.2s ease;
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus-visible {
+    .nav-links a:hover {
       color: var(--blue);
-    }
-
-    .nav-links a:hover::after,
-    .nav-links a:focus-visible::after {
-      transform: scaleX(1);
     }
 
     .nav-actions {
@@ -397,8 +350,7 @@
         transform 0.2s ease,
         background 0.2s ease,
         border-color 0.2s ease,
-        color 0.2s ease,
-        box-shadow 0.2s ease;
+        color 0.2s ease;
     }
 
     .button:hover {
@@ -409,7 +361,6 @@
       color: var(--white);
       background: var(--yellow);
       border-color: var(--yellow);
-      box-shadow: 0 9px 22px rgba(232, 149, 18, 0.25);
     }
 
     .button-primary:hover {
@@ -420,13 +371,8 @@
 
     .button-secondary {
       color: var(--white);
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(255, 255, 255, 0.55);
-    }
-
-    .button-secondary:hover {
-      background: rgba(255, 255, 255, 0.16);
-      border-color: var(--white);
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.55);
     }
 
     .menu-button {
@@ -450,7 +396,6 @@
       height: 2px;
       display: block;
       background: currentColor;
-      transition: transform 0.2s ease;
     }
 
     .menu-button span {
@@ -472,6 +417,8 @@
       top: 6px;
     }
 
+    /* HERO */
+
     .hero {
       position: relative;
       min-height: 720px;
@@ -482,24 +429,11 @@
       background:
         linear-gradient(
           90deg,
-          rgba(7, 27, 52, 0.94) 0%,
-          rgba(7, 27, 52, 0.82) 48%,
-          rgba(7, 27, 52, 0.33) 100%
+          rgba(7,27,52,0.94) 0%,
+          rgba(7,27,52,0.82) 48%,
+          rgba(7,27,52,0.33) 100%
         ),
         url("header-solar-cleaning.jpg") center / cover no-repeat;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 130px;
-      background: linear-gradient(
-        to top,
-        rgba(7, 27, 52, 0.16),
-        transparent
-      );
-      pointer-events: none;
     }
 
     .hero-content {
@@ -514,8 +448,8 @@
       margin-bottom: 24px;
       padding: 8px 13px;
       color: var(--yellow-light);
-      background: rgba(246, 184, 63, 0.12);
-      border: 1px solid rgba(246, 184, 63, 0.34);
+      background: rgba(246,184,63,0.12);
+      border: 1px solid rgba(246,184,63,0.34);
       border-radius: 999px;
       font-size: 0.78rem;
       font-weight: 800;
@@ -538,8 +472,8 @@
     .hero-copy {
       max-width: 670px;
       margin-bottom: 30px;
-      color: rgba(255, 255, 255, 0.84);
-      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,0.84);
+      font-size: 1.15rem;
     }
 
     .hero-actions {
@@ -553,26 +487,21 @@
       display: flex;
       gap: 12px 24px;
       flex-wrap: wrap;
-      color: rgba(255, 255, 255, 0.88);
+      color: rgba(255,255,255,0.88);
       font-size: 0.92rem;
       font-weight: 700;
     }
 
-    .trust-line span {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-
     .trust-line span::before {
       content: "✓";
+      margin-right: 8px;
       color: var(--yellow-light);
       font-weight: 900;
     }
 
+    /* TRUST STRIP */
+
     .trust-strip {
-      position: relative;
-      z-index: 2;
       background: var(--white);
       border-bottom: 1px solid var(--border);
       box-shadow: var(--shadow-sm);
@@ -597,7 +526,6 @@
 
     .trust-item strong {
       display: block;
-      margin-bottom: 2px;
       color: var(--blue-dark);
       font-family: "Nunito", sans-serif;
       font-weight: 900;
@@ -608,6 +536,8 @@
       font-size: 0.87rem;
     }
 
+    /* SERVICE OVERVIEW */
+
     .services-layout {
       display: grid;
       grid-template-columns: 1.25fr 0.75fr 0.75fr;
@@ -615,23 +545,12 @@
     }
 
     .service-card {
-      position: relative;
       min-height: 245px;
       padding: 30px;
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-sm);
-      transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(59, 115, 197, 0.35);
-      box-shadow: var(--shadow-md);
     }
 
     .service-card.featured {
@@ -645,39 +564,16 @@
       background:
         linear-gradient(
           to top,
-          rgba(7, 27, 52, 0.96),
-          rgba(7, 27, 52, 0.25)
+          rgba(7,27,52,0.96),
+          rgba(7,27,52,0.20)
         ),
-        url("before-1.jpg") center / cover no-repeat;
+        url("solar-cleaning-action.jpg") center / cover no-repeat;
       border: 0;
     }
 
     .service-card.featured h3,
     .service-card.featured p {
       color: var(--white);
-    }
-
-    .service-icon {
-      width: 50px;
-      height: 50px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 22px;
-      color: var(--blue);
-      background: var(--soft-blue);
-      border-radius: 13px;
-    }
-
-    .service-icon svg {
-      width: 25px;
-      height: 25px;
-      stroke: currentColor;
-    }
-
-    .featured .service-icon {
-      color: var(--navy);
-      background: var(--yellow-light);
     }
 
     .service-card h3 {
@@ -693,8 +589,6 @@
 
     .service-link {
       display: inline-flex;
-      align-items: center;
-      gap: 8px;
       margin-top: 20px;
       color: var(--blue);
       font-weight: 800;
@@ -704,6 +598,136 @@
     .featured .service-link {
       color: var(--yellow-light);
     }
+
+    /* NEW DETAILED SERVICE SECTIONS */
+
+    .service-detail-section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-detail-layout {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .service-detail-layout.reverse {
+      grid-template-columns: 0.95fr 1.05fr;
+    }
+
+    .service-detail-layout.reverse .service-detail-media {
+      order: 2;
+    }
+
+    .service-detail-layout.reverse .service-detail-content {
+      order: 1;
+    }
+
+    .service-detail-media {
+      display: grid;
+      grid-template-columns: 1fr 0.52fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 14px;
+      min-height: 560px;
+    }
+
+    .service-detail-media .main-photo {
+      grid-row: 1 / 3;
+    }
+
+    .service-detail-photo {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .service-detail-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .service-detail-photo .photo-caption {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      left: 14px;
+      padding: 10px 13px;
+      color: var(--white);
+      background: rgba(7,27,52,0.82);
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      backdrop-filter: blur(8px);
+    }
+
+    .service-detail-content h2 {
+      margin-bottom: 18px;
+      font-size: clamp(2.2rem, 4.3vw, 3.5rem);
+      letter-spacing: -0.04em;
+    }
+
+    .service-detail-content > p {
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .service-highlight {
+      margin: 24px 0;
+      padding: 18px 20px;
+      color: var(--blue-dark);
+      background: var(--soft-blue);
+      border-left: 4px solid var(--yellow);
+      border-radius: 0 12px 12px 0;
+      font-weight: 700;
+    }
+
+    .service-checks {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 10px;
+      margin: 26px 0 30px;
+    }
+
+    .service-check {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 12px 14px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .service-check::before {
+      content: "✓";
+      flex: 0 0 auto;
+      color: var(--yellow);
+      font-weight: 900;
+    }
+
+    .service-detail-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .text-link {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    /* RESULTS */
 
     .results-grid {
       display: grid;
@@ -742,11 +766,10 @@
       left: 12px;
       padding: 5px 10px;
       color: var(--white);
-      background: rgba(7, 27, 52, 0.88);
+      background: rgba(7,27,52,0.88);
       border-radius: 999px;
       font-size: 0.7rem;
       font-weight: 800;
-      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
 
@@ -765,6 +788,8 @@
       font-size: 0.93rem;
     }
 
+    /* WHY US */
+
     .why-layout {
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
@@ -779,7 +804,7 @@
       background:
         linear-gradient(
           to top,
-          rgba(7, 27, 52, 0.65),
+          rgba(7,27,52,0.65),
           transparent 55%
         ),
         url("after-3.jpg") center / cover no-repeat;
@@ -794,15 +819,12 @@
       left: 24px;
       padding: 22px;
       color: var(--white);
-      background: rgba(7, 27, 52, 0.86);
-      border: 1px solid rgba(255, 255, 255, 0.17);
+      background: rgba(7,27,52,0.86);
       border-radius: var(--radius-md);
-      backdrop-filter: blur(10px);
     }
 
     .why-photo-card strong {
       display: block;
-      margin-bottom: 4px;
       color: var(--yellow-light);
       font-family: "Nunito", sans-serif;
       font-size: 1.1rem;
@@ -810,7 +832,7 @@
 
     .why-photo-card p {
       margin-bottom: 0;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255,255,255,0.8);
       font-size: 0.9rem;
     }
 
@@ -824,7 +846,6 @@
       display: grid;
       grid-template-columns: 46px 1fr;
       gap: 15px;
-      align-items: start;
       padding: 17px;
       background: var(--white);
       border: 1px solid var(--border);
@@ -854,32 +875,10 @@
       font-size: 0.91rem;
     }
 
-    /* Manufacturer guidance */
-    .manufacturer-section {
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(
-          circle at 92% 12%,
-          rgba(59, 115, 197, 0.10),
-          transparent 30%
-        ),
-        var(--white);
-    }
+    /* MANUFACTURERS */
 
-    .manufacturer-section::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      height: 1px;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        var(--border),
-        transparent
-      );
+    .manufacturer-section {
+      background: var(--white);
     }
 
     .manufacturer-intro {
@@ -888,10 +887,8 @@
     }
 
     .manufacturer-intro h2 {
-      max-width: 760px;
       margin-bottom: 16px;
-      font-size: clamp(2.15rem, 4.5vw, 3.45rem);
-      letter-spacing: -0.045em;
+      font-size: clamp(2.15rem,4.5vw,3.45rem);
     }
 
     .manufacturer-intro h2 span {
@@ -899,24 +896,19 @@
     }
 
     .manufacturer-intro p {
-      max-width: 730px;
-      margin-bottom: 0;
       color: var(--muted);
-      font-size: 1.04rem;
     }
 
     .manufacturer-layout {
       display: grid;
-      grid-template-columns:
-        minmax(0, 1.22fr)
-        minmax(320px, 0.78fr);
+      grid-template-columns: minmax(0,1.22fr) minmax(320px,0.78fr);
       gap: 30px;
       align-items: start;
     }
 
     .manufacturer-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(2,minmax(0,1fr));
       gap: 16px;
     }
 
@@ -929,16 +921,6 @@
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
       box-shadow: var(--shadow-sm);
-      transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
-    }
-
-    .manufacturer-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(59, 115, 197, 0.35);
-      box-shadow: var(--shadow-md);
     }
 
     .manufacturer-card.wide {
@@ -951,82 +933,32 @@
       display: flex;
       align-items: center;
       margin-bottom: 17px;
-      font-family: "Nunito", sans-serif;
+      font-family: "Nunito",sans-serif;
       font-size: 1.42rem;
       font-weight: 900;
-      letter-spacing: -0.035em;
     }
 
-    .manufacturer-brand.tesla {
-      color: #d71920;
-      letter-spacing: 0.13em;
-    }
-
-    .manufacturer-brand.sunrun {
-      color: #1769e8;
-    }
-
-    .manufacturer-brand.sunpower {
-      color: #141a22;
-    }
-
-    .manufacturer-brand.sunpower span {
-      color: var(--yellow);
-    }
-
-    .manufacturer-brand.enphase {
-      color: #e76419;
-    }
-
-    .manufacturer-brand.rec {
-      color: #b98400;
-    }
-
-    .manufacturer-brand.qcells {
-      color: #0584c7;
-    }
-
-    .manufacturer-brand.panasonic {
-      color: #0b4da2;
-    }
+    .manufacturer-brand.tesla { color:#d71920; letter-spacing:0.13em; }
+    .manufacturer-brand.sunrun { color:#1769e8; }
+    .manufacturer-brand.sunpower { color:#141a22; }
+    .manufacturer-brand.sunpower span { color:var(--yellow); }
+    .manufacturer-brand.enphase { color:#e76419; }
+    .manufacturer-brand.rec { color:#b98400; }
+    .manufacturer-brand.qcells { color:#0584c7; }
+    .manufacturer-brand.panasonic { color:#0b4da2; }
 
     .manufacturer-card blockquote {
       margin: 0 0 20px;
       color: var(--text);
       font-size: 0.94rem;
-      line-height: 1.62;
-    }
-
-    .manufacturer-card blockquote::before {
-      content: "“";
-      margin-right: 2px;
-      color: var(--yellow);
-      font-family: Georgia, serif;
-      font-size: 1.5rem;
-      line-height: 0;
-      vertical-align: -0.22em;
     }
 
     .manufacturer-source {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
       margin-top: auto;
       color: var(--blue);
       font-size: 0.79rem;
       font-weight: 800;
       text-decoration: none;
-    }
-
-    .manufacturer-source:hover {
-      color: var(--navy);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    .manufacturer-source::after {
-      content: "↗";
-      font-size: 0.9rem;
     }
 
     .evidence-panel {
@@ -1045,7 +977,6 @@
     }
 
     .evidence-panel > p {
-      margin-bottom: 22px;
       color: var(--muted);
       font-size: 0.91rem;
     }
@@ -1056,34 +987,10 @@
     }
 
     .document-excerpt {
-      position: relative;
-      overflow: hidden;
-      padding: 19px 19px 17px;
+      padding: 19px;
       background: var(--white);
       border: 1px solid #d8e0ea;
-      border-radius: 12px 12px 16px 10px;
-      box-shadow: 0 10px 24px rgba(7, 27, 52, 0.09);
-    }
-
-    .document-excerpt::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -1px;
-      left: 0;
-      height: 7px;
-      opacity: 0.28;
-      background:
-        linear-gradient(
-          135deg,
-          transparent 50%,
-          #b8c4d2 50%
-        ) 0 0 / 12px 7px repeat-x,
-        linear-gradient(
-          45deg,
-          transparent 50%,
-          #b8c4d2 50%
-        ) 6px 0 / 12px 7px repeat-x;
+      border-radius: 12px;
     }
 
     .document-heading {
@@ -1091,77 +998,43 @@
       justify-content: space-between;
       gap: 12px;
       margin-bottom: 10px;
-      color: var(--text);
       font-size: 0.74rem;
       font-weight: 800;
     }
 
-    .document-heading span:last-child {
-      color: var(--muted);
-      font-weight: 700;
-    }
-
     .document-excerpt p {
       margin-bottom: 12px;
-      color: #28374b;
-      font-family: Georgia, serif;
+      font-family: Georgia,serif;
       font-size: 0.84rem;
-      line-height: 1.55;
     }
 
     .document-excerpt mark {
-      padding: 1px 3px;
-      color: inherit;
       background: #ffe789;
-      box-decoration-break: clone;
-      -webkit-box-decoration-break: clone;
     }
 
     .document-excerpt a {
-      position: relative;
-      z-index: 1;
       color: var(--blue);
       font-size: 0.75rem;
       font-weight: 800;
       text-decoration: none;
     }
 
-    .document-excerpt a:hover {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
     .manufacturer-cta {
       margin-top: 18px;
       padding: 22px;
-      background: linear-gradient(
-        135deg,
-        #eaf3ff,
-        #f7faff
-      );
-      border: 1px solid #cfe0f4;
+      background: #eaf3ff;
       border-radius: var(--radius-md);
     }
 
     .manufacturer-cta strong {
       display: block;
       margin-bottom: 5px;
-      color: var(--navy);
-      font-family: "Nunito", sans-serif;
-      font-size: 1.05rem;
+      font-family: "Nunito",sans-serif;
     }
 
     .manufacturer-cta p {
-      margin-bottom: 15px;
       color: var(--muted);
       font-size: 0.86rem;
-    }
-
-    .manufacturer-cta .button {
-      width: 100%;
-      min-height: 44px;
-      padding: 10px 16px;
-      font-size: 0.88rem;
     }
 
     .manufacturer-disclaimer {
@@ -1177,20 +1050,19 @@
       display: none;
     }
 
+    /* PROCESS */
+
     .process-grid {
-      position: relative;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4,1fr);
       gap: 20px;
     }
 
     .process-card {
-      position: relative;
       padding: 26px;
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
     }
 
     .process-number {
@@ -1202,13 +1074,12 @@
       color: var(--white);
       background: var(--blue);
       border-radius: 13px;
-      font-family: "Nunito", sans-serif;
+      font-family: "Nunito",sans-serif;
       font-weight: 900;
     }
 
     .process-card h3 {
       margin-bottom: 8px;
-      font-size: 1.1rem;
     }
 
     .process-card p {
@@ -1216,6 +1087,8 @@
       color: var(--muted);
       font-size: 0.91rem;
     }
+
+    /* REVIEWS */
 
     .reviews-header {
       display: flex;
@@ -1234,25 +1107,19 @@
       text-align: center;
     }
 
-    .review-summary .stars {
+    .review-summary .stars,
+    .review-card .stars {
       color: var(--yellow-light);
       letter-spacing: 3px;
     }
 
-    .review-summary strong {
-      display: block;
-      margin-top: 3px;
-      font-family: "Nunito", sans-serif;
-    }
-
     .reviews-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2,1fr);
       gap: 22px;
     }
 
     .review-card {
-      position: relative;
       padding: 32px;
       background: var(--white);
       border: 1px solid var(--border);
@@ -1260,28 +1127,8 @@
       box-shadow: var(--shadow-sm);
     }
 
-    .review-card::before {
-      content: "“";
-      position: absolute;
-      top: 8px;
-      right: 24px;
-      color: var(--soft-blue);
-      font-family: Georgia, serif;
-      font-size: 6rem;
-      line-height: 1;
-    }
-
-    .review-card .stars {
-      position: relative;
-      color: var(--yellow);
-      letter-spacing: 2px;
-    }
-
     .review-card blockquote {
-      position: relative;
       margin: 18px 0 22px;
-      color: var(--text);
-      font-size: 0.97rem;
     }
 
     .reviewer {
@@ -1290,13 +1137,15 @@
     }
 
     .reviewer strong {
-      font-family: "Nunito", sans-serif;
+      font-family: "Nunito",sans-serif;
     }
 
     .reviewer span {
       color: var(--muted);
       font-size: 0.84rem;
     }
+
+    /* AREAS */
 
     .area-layout {
       display: grid;
@@ -1316,7 +1165,6 @@
       padding: 9px 13px;
       color: var(--blue-dark);
       background: var(--soft-blue);
-      border: 1px solid #d7e5f6;
       border-radius: 999px;
       font-size: 0.9rem;
       font-weight: 800;
@@ -1325,42 +1173,28 @@
     .area-card {
       padding: 34px;
       color: var(--white);
-      background: linear-gradient(
-        135deg,
-        rgba(7, 27, 52, 0.98),
-        rgba(30, 77, 140, 0.92)
-      );
+      background: linear-gradient(135deg,var(--navy),var(--blue));
       border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
     }
 
     .area-card h3 {
-      margin-bottom: 12px;
       color: var(--white);
-      font-size: 1.55rem;
     }
 
     .area-card p {
-      color: rgba(255, 255, 255, 0.78);
+      color: rgba(255,255,255,0.78);
     }
 
     .area-card .phone-link {
-      display: inline-block;
-      margin-top: 5px;
       color: var(--yellow-light);
-      font-size: 1.1rem;
     }
+
+    /* CONTACT */
 
     .contact-section {
       padding: 96px 0;
       color: var(--white);
-      background:
-        radial-gradient(
-          circle at top right,
-          rgba(59, 115, 197, 0.28),
-          transparent 35%
-        ),
-        var(--navy);
+      background: var(--navy);
     }
 
     .contact-layout {
@@ -1381,13 +1215,11 @@
     .contact-copy h2 {
       margin-bottom: 18px;
       color: var(--white);
-      font-size: clamp(2.3rem, 5vw, 3.8rem);
-      letter-spacing: -0.04em;
+      font-size: clamp(2.3rem,5vw,3.8rem);
     }
 
     .contact-copy p {
-      color: rgba(255, 255, 255, 0.76);
-      font-size: 1.05rem;
+      color: rgba(255,255,255,0.76);
     }
 
     .contact-details {
@@ -1398,16 +1230,9 @@
 
     .contact-details a,
     .contact-details span {
-      display: flex;
-      gap: 11px;
-      align-items: center;
       color: var(--white);
       font-weight: 700;
       text-decoration: none;
-    }
-
-    .contact-details b {
-      color: var(--yellow-light);
     }
 
     .quote-card {
@@ -1415,18 +1240,15 @@
       color: var(--text);
       background: var(--white);
       border-radius: var(--radius-lg);
-      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 28px 70px rgba(0,0,0,0.22);
     }
 
     .quote-card h3 {
       margin-bottom: 7px;
-      font-size: 1.55rem;
     }
 
     .quote-intro {
-      margin-bottom: 26px;
       color: var(--muted);
-      font-size: 0.93rem;
     }
 
     .quote-form {
@@ -1445,7 +1267,6 @@
     }
 
     .field label {
-      color: var(--text);
       font-size: 0.84rem;
       font-weight: 800;
     }
@@ -1460,24 +1281,11 @@
       background: var(--off-white);
       border: 1px solid var(--border);
       border-radius: 10px;
-      outline: none;
-      transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
     }
 
     .field textarea {
       min-height: 110px;
       resize: vertical;
-    }
-
-    .field input:focus,
-    .field textarea:focus,
-    .field select:focus {
-      background: var(--white);
-      border-color: var(--blue-light);
-      box-shadow: 0 0 0 4px rgba(59, 115, 197, 0.12);
     }
 
     .form-note {
@@ -1501,29 +1309,23 @@
       display: block;
       color: var(--success);
       background: #edf9f3;
-      border: 1px solid #c4ead7;
     }
 
     .form-status.error {
       display: block;
       color: #992f2f;
       background: #fff2f2;
-      border: 1px solid #f1cccc;
     }
 
     .quote-submit {
       width: 100%;
     }
 
-    .quote-submit:disabled {
-      opacity: 0.7;
-      cursor: not-allowed;
-      transform: none;
-    }
+    /* FOOTER */
 
     footer {
       padding: 60px 0 90px;
-      color: rgba(255, 255, 255, 0.72);
+      color: rgba(255,255,255,0.72);
       background: #041426;
     }
 
@@ -1532,7 +1334,7 @@
       grid-template-columns: 1.4fr 0.8fr 0.8fr;
       gap: 50px;
       padding-bottom: 42px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+      border-bottom: 1px solid rgba(255,255,255,0.11);
     }
 
     .footer-brand img {
@@ -1544,15 +1346,9 @@
       border-radius: 12px;
     }
 
-    .footer-brand p {
-      max-width: 430px;
-      margin-bottom: 0;
-    }
-
     footer h3 {
       margin-bottom: 14px;
       color: var(--white);
-      font-size: 1rem;
     }
 
     .footer-links {
@@ -1561,12 +1357,8 @@
     }
 
     .footer-links a {
-      color: rgba(255, 255, 255, 0.72);
+      color: rgba(255,255,255,0.72);
       text-decoration: none;
-    }
-
-    .footer-links a:hover {
-      color: var(--yellow-light);
     }
 
     .footer-bottom {
@@ -1574,7 +1366,6 @@
       justify-content: space-between;
       gap: 20px;
       padding-top: 25px;
-      color: rgba(255, 255, 255, 0.48);
       font-size: 0.82rem;
     }
 
@@ -1582,20 +1373,7 @@
       display: none;
     }
 
-    :focus-visible {
-      outline: 3px solid var(--yellow-light);
-      outline-offset: 3px;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-      }
-    }
+    /* TABLET */
 
     @media (max-width: 1020px) {
       .nav-links {
@@ -1603,15 +1381,14 @@
         top: 74px;
         right: 0;
         bottom: 0;
-        width: min(86vw, 360px);
+        width: min(86vw,360px);
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: stretch;
         gap: 0;
         padding: 25px;
         background: var(--white);
-        box-shadow: -20px 30px 50px rgba(7, 27, 52, 0.18);
+        box-shadow: -20px 30px 50px rgba(7,27,52,0.18);
         transform: translateX(110%);
         transition: transform 0.25s ease;
       }
@@ -1640,46 +1417,32 @@
       .service-card.featured {
         grid-column: 1 / -1;
         grid-row: auto;
-        min-height: 430px;
+      }
+
+      .service-detail-layout,
+      .service-detail-layout.reverse,
+      .why-layout,
+      .contact-layout,
+      .area-layout,
+      .manufacturer-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .service-detail-layout.reverse .service-detail-media,
+      .service-detail-layout.reverse .service-detail-content {
+        order: initial;
       }
 
       .results-grid {
         grid-template-columns: 1fr;
       }
 
-      .comparison img {
-        height: 330px;
-      }
-
-      .why-layout,
-      .contact-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .why-photo {
-        min-height: 520px;
-      }
-
-      .manufacturer-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .evidence-panel {
-        position: static;
-      }
-
-      .document-stack {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
       .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .area-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
       }
     }
+
+    /* MOBILE */
 
     @media (max-width: 760px) {
       body {
@@ -1687,7 +1450,7 @@
       }
 
       .container {
-        width: min(calc(100% - 28px), var(--container));
+        width: min(calc(100% - 28px),var(--container));
       }
 
       .section,
@@ -1701,14 +1464,7 @@
       }
 
       .section-heading h2 {
-        margin-bottom: 12px;
-        font-size: clamp(1.85rem, 8vw, 2.4rem);
-      }
-
-      .section-heading p,
-      .manufacturer-intro p {
-        font-size: 0.96rem;
-        line-height: 1.55;
+        font-size: clamp(1.85rem,8vw,2.4rem);
       }
 
       .top-bar {
@@ -1717,7 +1473,6 @@
 
       .nav-shell {
         min-height: 68px;
-        grid-template-columns: auto 1fr auto;
       }
 
       .brand img {
@@ -1737,36 +1492,26 @@
         background:
           linear-gradient(
             180deg,
-            rgba(7, 27, 52, 0.82),
-            rgba(7, 27, 52, 0.75)
+            rgba(7,27,52,0.82),
+            rgba(7,27,52,0.75)
           ),
-          url("header-solar-cleaning-mobile.jpg")
-          center / cover no-repeat;
+          url("header-solar-cleaning-mobile.jpg") center / cover no-repeat;
       }
 
       .hero-content {
-        padding-top: 68px;
-        padding-bottom: 60px;
-      }
-
-      .hero-badge {
-        margin-bottom: 16px;
+        padding: 68px 0 60px;
       }
 
       .hero h1 {
-        margin-bottom: 16px;
-        font-size: clamp(2.45rem, 12vw, 3.7rem);
+        font-size: clamp(2.45rem,12vw,3.7rem);
       }
 
       .hero-copy {
-        margin-bottom: 22px;
         font-size: 1rem;
-        line-height: 1.55;
       }
 
       .hero-actions {
         display: grid;
-        margin-bottom: 20px;
       }
 
       .hero-actions .button {
@@ -1779,7 +1524,7 @@
       }
 
       .trust-strip-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2,minmax(0,1fr));
       }
 
       .trust-item {
@@ -1787,28 +1532,56 @@
         border-bottom: 1px solid var(--border);
       }
 
-      .trust-item:nth-child(2n) {
-        border-right: 0;
-      }
-
-      .trust-item strong {
-        font-size: 0.9rem;
-      }
-
-      .trust-item span {
-        font-size: 0.75rem;
-      }
-
       .services-layout,
       .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .service-card.featured {
-        min-height: 410px;
+      /* Keep new detailed sections compact */
+      .service-detail-layout,
+      .service-detail-layout.reverse {
+        gap: 28px;
       }
 
-      /* Swipeable before-and-after cards */
+      .service-detail-media {
+        min-height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 310px 150px;
+      }
+
+      .service-detail-media .main-photo {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+
+      .service-detail-media .secondary-photo {
+        grid-row: 2;
+      }
+
+      .service-detail-content h2 {
+        font-size: clamp(2rem,9vw,2.6rem);
+      }
+
+      .service-checks {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .service-check {
+        padding: 10px 12px;
+      }
+
+      .service-detail-actions {
+        display: grid;
+      }
+
+      .service-detail-actions .button,
+      .service-detail-actions .text-link {
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* Swipe results instead of stacking */
       .results-grid {
         display: flex;
         gap: 16px;
@@ -1817,7 +1590,6 @@
         padding: 4px 14px 20px;
         margin-inline: -14px;
         scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
       }
 
       .results-grid::-webkit-scrollbar {
@@ -1830,33 +1602,12 @@
       }
 
       .comparison img {
-        height: 200px;
+        height: 190px;
       }
 
-      .why-photo {
-        min-height: 430px;
-      }
-
-      /* Manufacturer mobile controls */
-      .manufacturer-intro {
-        margin-bottom: 30px;
-      }
-
-      .manufacturer-layout {
-        gap: 18px;
-      }
-
-      .manufacturer-grid,
-      .document-stack {
+      /* Manufacturer section shortening */
+      .manufacturer-grid {
         grid-template-columns: 1fr;
-      }
-
-      .manufacturer-card.wide {
-        grid-column: auto;
-      }
-
-      .manufacturer-card {
-        min-height: auto;
       }
 
       .manufacturer-grid .manufacturer-card:nth-child(n + 3) {
@@ -1877,19 +1628,10 @@
         padding: 12px 16px;
         color: var(--blue);
         background: var(--soft-blue);
-        border: 1px solid #cfe0f4;
+        border: 1px solid var(--border);
         border-radius: 12px;
-        font-family: "Nunito", sans-serif;
+        font-family: "Nunito",sans-serif;
         font-weight: 900;
-        cursor: pointer;
-      }
-
-      .mobile-manufacturer-toggle {
-        margin-top: 0;
-      }
-
-      .evidence-panel {
-        padding: 22px 18px;
       }
 
       .evidence-panel .document-stack {
@@ -1898,17 +1640,16 @@
 
       .evidence-panel.show-evidence .document-stack {
         display: grid;
-        grid-template-columns: 1fr;
         margin-top: 15px;
       }
 
-      .mobile-evidence-toggle {
-        margin-bottom: 16px;
+      .evidence-panel {
+        position: static;
+        padding: 22px 18px;
       }
 
-      /* Compact process timeline */
+      /* Compact process */
       .process-grid {
-        display: grid;
         grid-template-columns: 1fr;
         gap: 0;
       }
@@ -1922,22 +1663,13 @@
         border: 0;
         border-bottom: 1px solid var(--border);
         border-radius: 0;
-        box-shadow: none;
-      }
-
-      .process-card:last-child {
-        border-bottom: 0;
       }
 
       .process-number {
         grid-row: 1 / 3;
         width: 40px;
         height: 40px;
-        margin-bottom: 0;
-      }
-
-      .process-card h3 {
-        margin-bottom: 4px;
+        margin: 0;
       }
 
       .reviews-header {
@@ -1948,7 +1680,6 @@
         margin-top: 24px;
       }
 
-      /* Swipeable reviews */
       .reviews-grid {
         display: flex;
         gap: 16px;
@@ -1957,22 +1688,12 @@
         padding: 4px 14px 20px;
         margin-inline: -14px;
         scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .reviews-grid::-webkit-scrollbar {
-        display: none;
       }
 
       .review-card {
         flex: 0 0 88%;
-        padding: 24px;
         scroll-snap-align: start;
-      }
-
-      .review-card blockquote {
-        font-size: 0.93rem;
-        line-height: 1.55;
+        padding: 24px;
       }
 
       .quote-card {
@@ -2007,9 +1728,8 @@
         grid-template-columns: 1fr 1fr;
         gap: 9px;
         padding: 10px;
-        background: rgba(255, 255, 255, 0.97);
+        background: rgba(255,255,255,0.97);
         border-top: 1px solid var(--border);
-        box-shadow: 0 -10px 25px rgba(7, 27, 52, 0.12);
       }
 
       .mobile-actions a {
@@ -2017,35 +1737,19 @@
         display: grid;
         place-items: center;
         border-radius: 10px;
-        font-family: "Nunito", sans-serif;
+        font-family: "Nunito",sans-serif;
         font-weight: 900;
         text-decoration: none;
       }
 
-      .mobile-actions .mobile-call {
+      .mobile-call {
         color: var(--white);
         background: var(--blue);
       }
 
-      .mobile-actions .mobile-quote {
+      .mobile-quote {
         color: var(--navy);
         background: var(--yellow-light);
-      }
-    }
-
-    @media (max-width: 470px) {
-      .trust-strip-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .comparison img {
-        height: 165px;
-      }
-
-      .why-photo-card {
-        right: 14px;
-        bottom: 14px;
-        left: 14px;
       }
     }
   </style>
@@ -2064,7 +1768,8 @@
     ],
     "serviceType": [
       "Solar panel cleaning",
-      "Bird proofing",
+      "Solar panel bird proofing",
+      "Commercial solar cleaning",
       "Window washing"
     ]
   }
@@ -2072,506 +1777,680 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main-content">
-    Skip to main content
-  </a>
 
-  <div class="top-bar">
-    <div class="top-bar-inner">
-      <a href="tel:8188505312">
-        Call or text: (818) 850-5312
-      </a>
+<a class="skip-link" href="#main-content">
+  Skip to main content
+</a>
 
-      <span>
-        Free quotes for homes and businesses
-      </span>
-    </div>
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <a href="tel:8188505312">
+      Call or text: (818) 850-5312
+    </a>
+    <span>Free quotes for homes and businesses</span>
   </div>
+</div>
 
-  <header class="site-header">
-    <div class="container nav-shell">
-      <a
-        class="brand"
-        href="#top"
-        aria-label="Bright Panels Solar Cleaning home"
+<header class="site-header">
+  <div class="container nav-shell">
+
+    <a class="brand" href="#top" aria-label="Bright Panels Solar Cleaning home">
+      <img
+        src="logo.png"
+        alt="Bright Panels Solar Cleaning"
+        onerror="this.style.display='none'"
       >
-        <img
-          src="logo.png"
-          alt="Bright Panels Solar Cleaning"
-          onerror="this.style.display='none'"
-        >
+    </a>
+
+    <nav class="nav-links" id="main-navigation">
+      <a href="#services">Services</a>
+      <a href="#solar-cleaning">Solar Cleaning</a>
+      <a href="#bird-proofing">Bird Proofing</a>
+      <a href="#results">Results</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="phone-link" href="tel:8188505312">
+        (818) 850-5312
       </a>
 
-      <nav
-        class="nav-links"
-        id="main-navigation"
-        aria-label="Main navigation"
+      <a class="button button-primary" href="#contact">
+        Get a Free Quote
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-controls="main-navigation"
+        aria-expanded="false"
+        aria-label="Open navigation menu"
       >
-        <a href="#services">Services</a>
-        <a href="#results">Results</a>
-        <a href="#why-us">Why Bright Panels</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#areas">Service Area</a>
-      </nav>
+        <span></span>
+      </button>
+    </div>
 
-      <div class="nav-actions">
-        <a class="phone-link" href="tel:8188505312">
-          (818) 850-5312
-        </a>
+  </div>
+</header>
 
-        <a class="button button-primary" href="#contact">
-          Get a Free Quote
-        </a>
+<main id="main-content">
 
-        <button
-          class="menu-button"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-controls="main-navigation"
-          aria-expanded="false"
-        >
-          <span aria-hidden="true"></span>
-        </button>
+  <!-- HERO -->
+
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          Local solar cleaning specialists
+        </div>
+
+        <h1>
+          Professional Solar Panel Cleaning
+          <span>Done the Right Way</span>
+        </h1>
+
+        <p class="hero-copy">
+          Safe, non-abrasive solar panel cleaning, bird proofing,
+          and exterior window washing for homes and businesses
+          throughout the Antelope Valley, Santa Clarita Valley,
+          and San Fernando Valley.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">
+            Request a Free Quote
+          </a>
+
+          <a class="button button-secondary" href="tel:8188505312">
+            Call or Text Now
+          </a>
+        </div>
+
+        <div class="trust-line">
+          <span>Insured service</span>
+          <span>Purified-water cleaning</span>
+          <span>Residential and commercial</span>
+        </div>
+
       </div>
     </div>
-  </header>
+  </section>
 
-  <main id="main-content">
-    <section class="hero" id="top">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            Local solar cleaning specialists
-          </div>
+  <!-- TRUST -->
 
-          <h1>
-            Professional Solar Panel Cleaning
-            <span>Done the Right Way</span>
-          </h1>
+  <aside class="trust-strip">
+    <div class="container trust-strip-grid">
 
-          <p class="hero-copy">
-            Safe, non-abrasive solar panel cleaning, bird proofing,
-            and exterior window washing for homes and businesses
-            throughout the Antelope Valley, Santa Clarita Valley,
-            and San Fernando Valley.
+      <div class="trust-item">
+        <strong>Free Quotes</strong>
+        <span>Clear pricing before service</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Photo Estimates</strong>
+        <span>Text your panel photos</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Safe Methods</strong>
+        <span>No harsh pressure washing</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Local Service</strong>
+        <span>Northern Los Angeles County</span>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- SERVICES OVERVIEW -->
+
+  <section class="section" id="services">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Our Services</div>
+
+        <h2>
+          Specialized solar care for homes and businesses
+        </h2>
+
+        <p>
+          Solar panel cleaning and bird proofing are two of our
+          primary services, with commercial cleaning, exterior
+          window washing, and debris removal also available.
+        </p>
+      </div>
+
+      <div class="services-layout">
+
+        <article class="service-card featured">
+          <h3>Residential Solar Panel Cleaning</h3>
+
+          <p>
+            Purified water and professional non-abrasive equipment
+            help remove dust, pollen, residue, and bird droppings
+            without harsh pressure washing.
           </p>
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">
-              Request a Free Quote
-            </a>
+          <a class="service-link" href="#solar-cleaning">
+            Learn about solar cleaning →
+          </a>
+        </article>
 
-            <a class="button button-secondary" href="tel:8188505312">
-              Call or Text Now
-            </a>
-          </div>
+        <article class="service-card">
+          <h3>Solar Panel Bird Proofing</h3>
+          <p>
+            Protective mesh helps discourage birds from accessing
+            the sheltered area beneath solar arrays.
+          </p>
 
-          <div
-            class="trust-line"
-            aria-label="Service benefits"
+          <a class="service-link" href="#bird-proofing">
+            Learn about bird proofing →
+          </a>
+        </article>
+
+        <article class="service-card">
+          <h3>Commercial Solar Cleaning</h3>
+          <p>
+            Professional cleaning for rooftop arrays, carports,
+            and larger commercial systems.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Exterior Window Washing</h3>
+          <p>
+            Streak-free exterior window cleaning is available as
+            a convenient add-on service.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Debris Removal</h3>
+          <p>
+            Loose leaves, nesting material, and accessible debris
+            can be removed during eligible services.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLAR PANEL CLEANING DETAIL -->
+
+  <section
+    class="section section-alt service-detail-section"
+    id="solar-cleaning"
+  >
+    <div class="container service-detail-layout">
+
+      <div class="service-detail-media">
+
+        <div class="service-detail-photo main-photo">
+          <img
+            src="solar-cleaning-action.jpg"
+            alt="Bright Panels technician professionally cleaning solar panels with a solar cleaning brush"
+            loading="lazy"
           >
-            <span>Insured service</span>
-            <span>Purified-water cleaning</span>
-            <span>Residential and commercial</span>
+
+          <div class="photo-caption">
+            Professional solar panel cleaning in progress
           </div>
         </div>
+
+        <div class="service-detail-photo secondary-photo">
+          <img
+            src="solar-cleaning-detail.jpg"
+            alt="Professional solar panel cleaning equipment being used on a residential rooftop system"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="service-detail-photo secondary-photo">
+          <img
+            src="after-1.jpg"
+            alt="Clean residential solar panels after professional cleaning"
+            loading="lazy"
+          >
+        </div>
+
       </div>
-    </section>
 
-    <aside
-      class="trust-strip"
-      aria-label="Bright Panels service highlights"
-    >
-      <div class="container trust-strip-grid">
-        <div class="trust-item">
-          <strong>Free Quotes</strong>
-          <span>Clear pricing before service</span>
+      <div class="service-detail-content">
+
+        <div class="eyebrow">
+          Solar Panel Cleaning
         </div>
 
-        <div class="trust-item">
-          <strong>Photo Estimates</strong>
-          <span>Text your panel photos</span>
+        <h2>
+          Professional cleaning designed for solar panel surfaces
+        </h2>
+
+        <p>
+          Solar panels are exposed year-round to dust, pollen,
+          bird droppings, dirt, and airborne debris. Over time,
+          buildup can leave the surface visibly dirty and reduce
+          the amount of sunlight reaching the panel.
+        </p>
+
+        <p>
+          Bright Panels uses purified water and professional
+          soft-brush equipment to clean solar panel surfaces
+          without harsh pressure washing or abrasive cleaning
+          methods.
+        </p>
+
+        <div class="service-highlight">
+          Our goal is simple: remove surface buildup carefully
+          while treating the solar array and surrounding property
+          with respect.
         </div>
 
-        <div class="trust-item">
-          <strong>Safe Methods</strong>
-          <span>No harsh pressure washing</span>
-        </div>
+        <div class="service-checks">
 
-        <div class="trust-item">
-          <strong>Local Service</strong>
-          <span>Northern Los Angeles County</span>
-        </div>
-      </div>
-    </aside>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">
-            Our Services
+          <div class="service-check">
+            Purified-water cleaning
           </div>
 
+          <div class="service-check">
+            Soft, non-abrasive solar brushes
+          </div>
+
+          <div class="service-check">
+            Dust and pollen removal
+          </div>
+
+          <div class="service-check">
+            Bird-dropping and residue removal
+          </div>
+
+          <div class="service-check">
+            Residential and commercial systems
+          </div>
+
+          <div class="service-check">
+            Before-and-after photos when practical
+          </div>
+
+        </div>
+
+        <div class="service-detail-actions">
+
+          <a class="button button-primary" href="#contact">
+            Get a Solar Cleaning Quote
+          </a>
+
+          <a class="text-link" href="#results">
+            See before &amp; after results →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BIRD PROOFING DETAIL -->
+
+  <section
+    class="section service-detail-section"
+    id="bird-proofing"
+  >
+    <div class="container service-detail-layout reverse">
+
+      <div class="service-detail-media">
+
+        <div class="service-detail-photo main-photo">
+          <img
+            src="bird-proofing-detail.jpg"
+            alt="Protective bird proofing mesh installed around a residential solar panel array"
+            loading="lazy"
+          >
+
+          <div class="photo-caption">
+            Protective mesh installed around the solar array perimeter
+          </div>
+        </div>
+
+        <div class="service-detail-photo secondary-photo">
+          <img
+            src="bird-proofing-finished.jpg"
+            alt="Finished solar panel bird proofing installation"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="service-detail-photo secondary-photo">
+          <img
+            src="after-2.jpg"
+            alt="Solar panel area after cleaning and bird proofing service"
+            loading="lazy"
+          >
+        </div>
+
+      </div>
+
+      <div class="service-detail-content">
+
+        <div class="eyebrow">
+          Solar Panel Bird Proofing
+        </div>
+
+        <h2>
+          Help discourage birds from nesting beneath your solar panels
+        </h2>
+
+        <p>
+          Solar panels can create a sheltered space where pigeons
+          and other birds may attempt to nest. Over time, feathers,
+          nesting material, droppings, and other debris can collect
+          beneath and around the solar array.
+        </p>
+
+        <p>
+          Bright Panels provides bird-proofing services designed
+          to help restrict access beneath the panels. When
+          appropriate, we clean accessible debris around the
+          system and install protective mesh around the perimeter
+          of the array.
+        </p>
+
+        <div class="service-highlight">
+          Bird proofing is especially useful for properties
+          experiencing repeated bird activity, nesting material,
+          or debris beneath the panels.
+        </div>
+
+        <div class="service-checks">
+
+          <div class="service-check">
+            Bird-activity assessment
+          </div>
+
+          <div class="service-check">
+            Accessible nesting-debris removal
+          </div>
+
+          <div class="service-check">
+            Solar panel cleaning
+          </div>
+
+          <div class="service-check">
+            Protective perimeter mesh
+          </div>
+
+          <div class="service-check">
+            Careful fitting around array edges
+          </div>
+
+          <div class="service-check">
+            Finished-service photos
+          </div>
+
+        </div>
+
+        <div class="service-detail-actions">
+
+          <a class="button button-primary" href="#contact">
+            Get a Bird Proofing Quote
+          </a>
+
+          <a class="text-link" href="#results">
+            See real project results →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BEFORE AND AFTER -->
+
+  <section class="section section-alt" id="results">
+    <div class="container">
+
+      <div class="section-heading center">
+        <div class="eyebrow">Real Results</div>
+
+        <h2>
+          Before and after solar panel service
+        </h2>
+
+        <p>
+          These project photos show actual cleaning, debris
+          removal, and bird-proofing results.
+        </p>
+      </div>
+
+      <div class="results-grid">
+
+        <article class="result-card">
+          <div class="comparison">
+
+            <figure>
+              <span class="photo-label">Before</span>
+              <img
+                src="before-1.jpg"
+                alt="Dirty residential solar panels before cleaning"
+                loading="lazy"
+              >
+            </figure>
+
+            <figure>
+              <span class="photo-label">After</span>
+              <img
+                src="after-1.jpg"
+                alt="Residential solar panels after professional cleaning"
+                loading="lazy"
+              >
+            </figure>
+
+          </div>
+
+          <div class="result-content">
+            <h3>Residential Solar Cleaning</h3>
+            <p>
+              Surface buildup removed with purified water and
+              panel-safe cleaning equipment.
+            </p>
+          </div>
+        </article>
+
+        <article class="result-card">
+          <div class="comparison">
+
+            <figure>
+              <span class="photo-label">Before</span>
+              <img
+                src="before-2.jpg"
+                alt="Solar panel area before bird proofing and cleaning"
+                loading="lazy"
+              >
+            </figure>
+
+            <figure>
+              <span class="photo-label">After</span>
+              <img
+                src="after-2.jpg"
+                alt="Solar panel area after bird proofing and cleaning"
+                loading="lazy"
+              >
+            </figure>
+
+          </div>
+
+          <div class="result-content">
+            <h3>Bird Proofing and Cleaning</h3>
+            <p>
+              Accessible debris removed and protective mesh
+              installed where appropriate.
+            </p>
+          </div>
+        </article>
+
+        <article class="result-card">
+          <div class="comparison">
+
+            <figure>
+              <span class="photo-label">Before</span>
+              <img
+                src="before-3.jpg"
+                alt="Solar panels with dirt and debris before cleaning"
+                loading="lazy"
+              >
+            </figure>
+
+            <figure>
+              <span class="photo-label">After</span>
+              <img
+                src="after-3.jpg"
+                alt="Solar panels after cleaning and debris removal"
+                loading="lazy"
+              >
+            </figure>
+
+          </div>
+
+          <div class="result-content">
+            <h3>Cleaning and Debris Removal</h3>
+            <p>
+              Accumulated debris cleared and panel surfaces
+              professionally cleaned.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY BRIGHT PANELS -->
+
+  <section class="section" id="why-us">
+    <div class="container why-layout">
+
+      <div class="why-photo">
+        <div class="why-photo-card">
+          <strong>Panel-safe cleaning</strong>
+          <p>
+            Purified water and soft tools help reduce residue,
+            spotting, and unnecessary wear.
+          </p>
+        </div>
+      </div>
+
+      <div>
+
+        <div class="eyebrow">
+          Why Bright Panels
+        </div>
+
+        <div class="section-heading" style="margin-bottom:0">
           <h2>
-            Specialized solar care with helpful exterior add-ons
+            Professional solar care without the complicated process
           </h2>
 
           <p>
-            Solar panel cleaning is our core service. Bird proofing,
-            commercial cleaning, and exterior window washing are
-            available when your property needs more complete care.
+            Send your location and a few photos, receive clear
+            pricing, and choose a convenient appointment.
           </p>
         </div>
 
-        <div class="services-layout">
-          <article class="service-card featured">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="4"></circle>
-                <path
-                  d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.41M17.66 6.34l1.41-1.41"
-                ></path>
-              </svg>
+        <div class="benefit-list">
+
+          <article class="benefit">
+            <div class="benefit-number">01</div>
+            <div>
+              <h3>Purified-water cleaning</h3>
+              <p>
+                Helps reduce soap residue, mineral spotting, and
+                visible streaks.
+              </p>
             </div>
-
-            <h3>
-              Residential Solar Panel Cleaning
-            </h3>
-
-            <p>
-              Purified water and soft, non-abrasive tools remove
-              dust, pollen, residue, and grime without harsh
-              pressure washing.
-            </p>
-
-            <a class="service-link" href="#contact">
-              Request a residential quote →
-            </a>
           </article>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"
-                ></path>
-              </svg>
+          <article class="benefit">
+            <div class="benefit-number">02</div>
+            <div>
+              <h3>Non-abrasive methods</h3>
+              <p>
+                Professional equipment selected for solar panel
+                surfaces rather than harsh pressure washing.
+              </p>
             </div>
-
-            <h3>Commercial Solar Cleaning</h3>
-
-            <p>
-              Professional cleaning for rooftop arrays, carports,
-              and larger commercial systems.
-            </p>
           </article>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M5 19c5 0 9-4 9-9V6l5 3-5 3"></path>
-                <path
-                  d="M4 14c0-3 2-5 5-5h5M7 19l-2 2M11 18l1 3"
-                ></path>
-              </svg>
+          <article class="benefit">
+            <div class="benefit-number">03</div>
+            <div>
+              <h3>Insured service</h3>
+              <p>
+                Greater confidence when booking work involving
+                roofs and exterior property access.
+              </p>
             </div>
-
-            <h3>Bird Proofing</h3>
-
-            <p>
-              Mesh guard installation helps discourage nesting
-              and reduce debris beneath panel arrays.
-            </p>
           </article>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <rect
-                  x="4"
-                  y="3"
-                  width="16"
-                  height="18"
-                  rx="1"
-                ></rect>
-                <path d="M12 3v18M4 12h16"></path>
-              </svg>
+          <article class="benefit">
+            <div class="benefit-number">04</div>
+            <div>
+              <h3>Fast photo estimates</h3>
+              <p>
+                Text your city and solar panel photos to start an
+                estimate.
+              </p>
             </div>
-
-            <h3>Exterior Window Washing</h3>
-
-            <p>
-              Streak-free exterior window cleaning is available
-              as a convenient add-on service.
-            </p>
           </article>
 
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M4 19h16M6 17l2-8h8l2 8M9 9V5h6v4"
-                ></path>
-                <path d="M7 13h10"></path>
-              </svg>
-            </div>
-
-            <h3>Debris Removal</h3>
-
-            <p>
-              Loose leaves, nesting material, and surface debris
-              can be removed during eligible services.
-            </p>
-          </article>
         </div>
       </div>
-    </section>
 
-    <section class="section section-alt" id="results">
-      <div class="container">
-        <div class="section-heading center">
-          <div class="eyebrow">
-            Real Results
-          </div>
+    </div>
+  </section>
 
-          <h2>
-            Before and after solar panel cleaning
-          </h2>
+  <!-- MANUFACTURER GUIDANCE -->
 
-          <p>
-            See the difference careful cleaning and debris
-            removal can make to the appearance of a solar system.
-          </p>
+  <section
+    class="section manufacturer-section"
+    id="manufacturer-guidance"
+  >
+    <div class="container">
+
+      <div class="manufacturer-intro">
+
+        <div class="eyebrow">
+          Manufacturer Cleaning Guidance
         </div>
 
-        <div class="results-grid">
-          <article class="result-card">
-            <div class="comparison">
-              <figure>
-                <span class="photo-label">Before</span>
+        <h2>
+          It’s not just us.
+          <span>Solar companies discuss panel cleaning too.</span>
+        </h2>
 
-                <img
-                  src="before-1.jpg"
-                  alt="Dirty residential solar panels before professional cleaning"
-                  loading="lazy"
-                >
-              </figure>
+        <p>
+          Leading solar companies and panel manufacturers publish
+          guidance about dirt, debris, bird droppings, cleaning,
+          and system performance.
+        </p>
 
-              <figure>
-                <span class="photo-label">After</span>
-
-                <img
-                  src="after-1.jpg"
-                  alt="Residential solar panels after professional cleaning"
-                  loading="lazy"
-                >
-              </figure>
-            </div>
-
-            <div class="result-content">
-              <h3>Residential Solar Cleaning</h3>
-
-              <p>
-                Dust and surface buildup removed with purified
-                water and panel-safe equipment.
-              </p>
-            </div>
-          </article>
-
-          <article class="result-card">
-            <div class="comparison">
-              <figure>
-                <span class="photo-label">Before</span>
-
-                <img
-                  src="before-2.jpg"
-                  alt="Solar panel area before bird proofing and cleaning"
-                  loading="lazy"
-                >
-              </figure>
-
-              <figure>
-                <span class="photo-label">After</span>
-
-                <img
-                  src="after-2.jpg"
-                  alt="Solar panel area after bird proofing and cleaning"
-                  loading="lazy"
-                >
-              </figure>
-            </div>
-
-            <div class="result-content">
-              <h3>Bird Proofing and Cleaning</h3>
-
-              <p>
-                Pigeon-related debris removed and protective mesh
-                installed where appropriate.
-              </p>
-            </div>
-          </article>
-
-          <article class="result-card">
-            <div class="comparison">
-              <figure>
-                <span class="photo-label">Before</span>
-
-                <img
-                  src="before-3.jpg"
-                  alt="Solar panels with dirt and debris before cleaning"
-                  loading="lazy"
-                >
-              </figure>
-
-              <figure>
-                <span class="photo-label">After</span>
-
-                <img
-                  src="after-3.jpg"
-                  alt="Solar panels after cleaning and debris removal"
-                  loading="lazy"
-                >
-              </figure>
-            </div>
-
-            <div class="result-content">
-              <h3>Cleaning and Debris Removal</h3>
-
-              <p>
-                Accumulated debris cleared and panel surfaces
-                professionally cleaned.
-              </p>
-            </div>
-          </article>
-        </div>
       </div>
-    </section>
 
-    <section class="section" id="why-us">
-      <div class="container why-layout">
-        <div class="why-photo">
-          <div class="why-photo-card">
-            <strong>
-              Panel-safe cleaning
-            </strong>
-
-            <p>
-              Purified water and soft tools help reduce streaks,
-              residue, and unnecessary wear.
-            </p>
-          </div>
-        </div>
+      <div class="manufacturer-layout">
 
         <div>
-          <div class="eyebrow">
-            Why Bright Panels
-          </div>
 
-          <div
-            class="section-heading"
-            style="margin-bottom: 0;"
-          >
-            <h2>
-              Professional Solar Cleaning and Protection without
-              the complicated process
-            </h2>
-
-            <p>
-              Send your location and a few photos, receive clear
-              pricing, and choose a convenient appointment. We
-              handle the cleaning carefully and keep communication
-              straightforward.
-            </p>
-          </div>
-
-          <div class="benefit-list">
-            <article class="benefit">
-              <div class="benefit-number">01</div>
-
-              <div>
-                <h3>Purified-water cleaning</h3>
-
-                <p>
-                  Helps reduce soap residue, mineral spotting, and
-                  visible streaks.
-                </p>
-              </div>
-            </article>
-
-            <article class="benefit">
-              <div class="benefit-number">02</div>
-
-              <div>
-                <h3>Non-abrasive methods</h3>
-
-                <p>
-                  Equipment and techniques designed for solar panel
-                  surfaces rather than harsh pressure washing.
-                </p>
-              </div>
-            </article>
-
-            <article class="benefit">
-              <div class="benefit-number">03</div>
-
-              <div>
-                <h3>Insured service</h3>
-
-                <p>
-                  Greater confidence when booking work involving
-                  roofs and exterior property access.
-                </p>
-              </div>
-            </article>
-
-            <article class="benefit">
-              <div class="benefit-number">04</div>
-
-              <div>
-                <h3>Fast photo estimates</h3>
-
-                <p>
-                  Text your city and panel photos to start an
-                  estimate without an unnecessary appointment.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="section manufacturer-section"
-      id="manufacturer-guidance"
-    >
-      <div class="container">
-        <div class="manufacturer-intro">
-          <div class="eyebrow">
-            Manufacturer Cleaning Guidance
-          </div>
-
-          <h2>
-            It’s not just us.
-            <span>
-              Solar companies discuss panel cleaning too.
-            </span>
-          </h2>
-
-          <p>
-            Leading solar companies and panel manufacturers
-            publish guidance about dirt, debris, bird droppings,
-            cleaning, and system performance. Review their own
-            words and open each official source for additional
-            context.
-          </p>
-        </div>
-
-        <div class="manufacturer-layout">
           <div
             class="manufacturer-grid"
             id="manufacturer-cards"
           >
+
             <article class="manufacturer-card">
               <div class="manufacturer-brand tesla">
                 TESLA
@@ -2589,7 +2468,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Tesla Support
+                Tesla Support ↗
               </a>
             </article>
 
@@ -2609,7 +2488,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Sunrun cleaning guide
+                Sunrun cleaning guide ↗
               </a>
             </article>
 
@@ -2621,7 +2500,7 @@
               <blockquote>
                 These elements inevitably accumulate over time,
                 gradually reducing the efficiency of your system
-                and your overall energy production.
+                and overall energy production.
               </blockquote>
 
               <a
@@ -2630,7 +2509,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                SunPower cleaning guidance
+                SunPower guidance ↗
               </a>
             </article>
 
@@ -2650,7 +2529,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Enphase Support
+                Enphase Support ↗
               </a>
             </article>
 
@@ -2670,7 +2549,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                REC installation manual
+                REC installation manual ↗
               </a>
             </article>
 
@@ -2690,7 +2569,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Qcells FAQ
+                Qcells FAQ ↗
               </a>
             </article>
 
@@ -2710,9 +2589,10 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Panasonic Solar FAQ
+                Panasonic Solar FAQ ↗
               </a>
             </article>
+
           </div>
 
           <button
@@ -2724,813 +2604,782 @@
             View More Manufacturer Guidance
           </button>
 
-          <aside
-            class="evidence-panel"
-            aria-label="Official manufacturer document excerpts"
+        </div>
+
+        <aside class="evidence-panel">
+
+          <h3>
+            See it in their own words
+          </h3>
+
+          <p>
+            Open the official sources to review the complete
+            manufacturer guidance.
+          </p>
+
+          <button
+            class="mobile-evidence-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="official-excerpts"
           >
-            <h3>
-              See it in their own words
-            </h3>
+            View Official Source Excerpts
+          </button>
 
-            <p>
-              These responsive document-style previews highlight
-              key language. Open the official source to review the
-              complete guidance.
-            </p>
+          <div class="document-stack" id="official-excerpts">
 
-            <button
-              class="mobile-evidence-toggle"
-              type="button"
-              aria-expanded="false"
-              aria-controls="official-excerpts"
-            >
-              View Official Source Excerpts
-            </button>
-
-            <div
-              class="document-stack"
-              id="official-excerpts"
-            >
-              <article class="document-excerpt">
-                <div class="document-heading">
-                  <span>Tesla Support</span>
-                  <span>System Performance</span>
-                </div>
-
-                <p>
-                  <mark>
-                    If you have excessive soiling, such as bird
-                    droppings, you may wish to hire a local solar
-                    panel cleaning service.
-                  </mark>
-                </p>
-
-                <a
-                  href="https://www.tesla.com/support/energy/solar-panels/after-installation/understanding-system-performance"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View official source ↗
-                </a>
-              </article>
-
-              <article class="document-excerpt">
-                <div class="document-heading">
-                  <span>Qcells</span>
-                  <span>Solar FAQ</span>
-                </div>
-
-                <p>
-                  <mark>
-                    A dirty panel could slightly decrease solar
-                    efficiency.
-                  </mark>
-                </p>
-
-                <a
-                  href="https://us.qcells.com/faq/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View official source ↗
-                </a>
-              </article>
-
-              <article class="document-excerpt">
-                <div class="document-heading">
-                  <span>REC</span>
-                  <span>Installation Manual</span>
-                </div>
-
-                <p>
-                  <mark>
-                    Cleaning solar panels can assist in optimizing
-                    electricity output.
-                  </mark>
-                </p>
-
-                <a
-                  href="https://www.recgroup.com/sites/default/files/2024-11/im_rec_panels_ul_rev_l.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View official manual ↗
-                </a>
-              </article>
-            </div>
-
-            <div class="manufacturer-cta">
-              <strong>
-                Protect your solar investment
-              </strong>
+            <article class="document-excerpt">
+              <div class="document-heading">
+                <span>Tesla Support</span>
+                <span>System Performance</span>
+              </div>
 
               <p>
-                Bright Panels uses purified water and soft,
-                non-abrasive tools for professional residential
-                and commercial solar panel cleaning.
+                <mark>
+                  If you have excessive soiling, such as bird
+                  droppings, you may wish to hire a local solar
+                  panel cleaning service.
+                </mark>
               </p>
+            </article>
 
-              <a
-                class="button button-primary"
-                href="#contact"
-              >
-                Get a Free Quote
-              </a>
-            </div>
-          </aside>
-        </div>
+            <article class="document-excerpt">
+              <div class="document-heading">
+                <span>Qcells</span>
+                <span>Solar FAQ</span>
+              </div>
 
-        <p class="manufacturer-disclaimer">
-          Manufacturer information is provided for educational
-          purposes. Bright Panels Solar Cleaning is an independent
-          service provider and is not affiliated with, sponsored
-          by, or endorsed by the companies shown above. Cleaning
-          needs and approved methods can vary by system, agreement,
-          and manufacturer instructions.
-        </p>
-      </div>
-    </section>
+              <p>
+                <mark>
+                  A dirty panel could slightly decrease solar
+                  efficiency.
+                </mark>
+              </p>
+            </article>
 
-    <section class="section section-alt" id="process">
-      <div class="container">
-        <div class="section-heading center">
-          <div class="eyebrow">
-            Simple Scheduling
+            <article class="document-excerpt">
+              <div class="document-heading">
+                <span>REC</span>
+                <span>Installation Manual</span>
+              </div>
+
+              <p>
+                <mark>
+                  Cleaning solar panels can assist in optimizing
+                  electricity output.
+                </mark>
+              </p>
+            </article>
+
           </div>
 
-          <h2>
-            How the process works
-          </h2>
-
-          <p>
-            Getting a quote is simple. Share a few details,
-            receive clear pricing, and select a convenient
-            service date.
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-card">
-            <div class="process-number">1</div>
-
-            <h3>Send your details</h3>
-
-            <p>
-              Share your city, approximate panel count, and any
-              roof or access information you know.
-            </p>
-          </article>
-
-          <article class="process-card">
-            <div class="process-number">2</div>
-
-            <h3>Receive a quote</h3>
-
-            <p>
-              We provide straightforward pricing before
-              scheduling the service.
-            </p>
-          </article>
-
-          <article class="process-card">
-            <div class="process-number">3</div>
-
-            <h3>Choose a service date</h3>
-
-            <p>
-              Select a convenient appointment and receive the
-              information needed before arrival.
-            </p>
-          </article>
-
-          <article class="process-card">
-            <div class="process-number">4</div>
-
-            <h3>Enjoy cleaner panels</h3>
-
-            <p>
-              Your system is left cleaner, brighter, and better
-              maintained.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="reviews-header">
-          <div
-            class="section-heading"
-            style="margin-bottom: 0;"
-          >
-            <div class="eyebrow">
-              Customer Feedback
-            </div>
-
-            <h2>
-              What customers say about Bright Panels
-            </h2>
-
-            <p>
-              Feedback from customers who booked solar cleaning
-              and related exterior services.
-            </p>
-          </div>
-
-          <div
-            class="review-summary"
-            aria-label="Five-star customer reviews"
-          >
-            <div class="stars">★★★★★</div>
-
+          <div class="manufacturer-cta">
             <strong>
-              Local customer service
+              Protect your solar investment
             </strong>
-          </div>
-        </div>
-
-        <div class="reviews-grid">
-          <article class="review-card">
-            <div
-              class="stars"
-              aria-label="Five stars"
-            >
-              ★★★★★
-            </div>
-
-            <blockquote>
-              Just had my solar panels cleaned and wanted to give
-              a shoutout for the great service. Super friendly,
-              professional, and more affordable than most quotes
-              I received. The difference was noticeable right
-              away, and the entire process was quick and
-              hassle-free. I would happily use them again and
-              recommend them to others.
-            </blockquote>
-
-            <div class="reviewer">
-              <strong>Misty O.</strong>
-              <span>Palmdale, California</span>
-            </div>
-          </article>
-
-          <article class="review-card">
-            <div
-              class="stars"
-              aria-label="Five stars"
-            >
-              ★★★★★
-            </div>
-
-            <blockquote>
-              Chris and his crew were amazing. Chris explained the
-              process so I could understand it, and they did an
-              amazing job. They even cleaned my gutters, picked up
-              the bird debris, and hosed down my patio. I would
-              highly recommend them.
-            </blockquote>
-
-            <div class="reviewer">
-              <strong>Gustavo C.</strong>
-              <span>Quartz Hill, California</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="areas">
-      <div class="container area-layout">
-        <div>
-          <div class="eyebrow">
-            Service Area
-          </div>
-
-          <div
-            class="section-heading"
-            style="margin-bottom: 0;"
-          >
-            <h2>
-              Serving communities across northern Los Angeles
-              County
-            </h2>
 
             <p>
-              Bright Panels provides solar panel cleaning, bird
-              proofing, and exterior window washing throughout
-              the following valleys and nearby communities.
+              Bright Panels uses purified water and soft,
+              non-abrasive tools for professional solar panel
+              cleaning.
             </p>
+
+            <a
+              class="button button-primary"
+              href="#contact"
+            >
+              Get a Free Quote
+            </a>
           </div>
 
-          <div
-            class="area-list"
-            aria-label="Bright Panels service areas"
-          >
-            <span>Antelope Valley</span>
-            <span>Palmdale</span>
-            <span>Lancaster</span>
-            <span>Quartz Hill</span>
-            <span>Santa Clarita Valley</span>
-            <span>San Fernando Valley</span>
-          </div>
-        </div>
-
-        <aside class="area-card">
-          <h3>
-            Not sure whether your property is in range?
-          </h3>
-
-          <p>
-            Call or text your city and a few photos. We can
-            usually confirm availability and explain what
-            information is needed for pricing.
-          </p>
-
-          <a class="phone-link" href="tel:8188505312">
-            Call or text (818) 850-5312
-          </a>
         </aside>
+
       </div>
-    </section>
 
-    <section class="contact-section" id="contact">
-      <div class="container contact-layout">
-        <div class="contact-copy">
-          <div class="eyebrow">
-            Free Quote
-          </div>
+      <p class="manufacturer-disclaimer">
+        Manufacturer information is provided for educational
+        purposes. Bright Panels Solar Cleaning is an independent
+        service provider and is not affiliated with, sponsored
+        by, or endorsed by the companies shown above.
+      </p>
 
-          <h2>
-            Ready for cleaner solar panels?
-          </h2>
+    </div>
+  </section>
 
-          <p>
-            Complete the form to request a quote. For the fastest
-            photo estimate, text your city, panel count, and panel
-            photos directly to our number.
-          </p>
+  <!-- PROCESS -->
 
-          <div class="contact-details">
-            <a href="tel:8188505312">
-              <b>Phone:</b>
-              <span>(818) 850-5312</span>
-            </a>
-
-            <span>
-              <b>Services:</b>
-              Solar cleaning, bird proofing, and window washing
-            </span>
-
-            <span>
-              <b>Coverage:</b>
-              Antelope, Santa Clarita, and San Fernando valleys
-            </span>
-          </div>
-        </div>
-
-        <div class="quote-card">
-          <h3>
-            Request your free quote
-          </h3>
-
-          <p class="quote-intro">
-            Required fields are marked with an asterisk.
-          </p>
-
-          <form
-            class="quote-form"
-            id="quote-form"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="access_key"
-              value="f242b5e1-1973-4fb3-baa8-cb762a3ffb67"
-            >
-
-            <input
-              type="hidden"
-              name="subject"
-              value="New Quote Request - Bright Panels Solar Cleaning"
-            >
-
-            <input
-              type="hidden"
-              name="from_name"
-              value="Bright Panels Website"
-            >
-
-            <input
-              type="checkbox"
-              name="botcheck"
-              tabindex="-1"
-              autocomplete="off"
-              style="display:none"
-            >
-
-            <div class="field">
-              <label for="quote-name">
-                Your name *
-              </label>
-
-              <input
-                id="quote-name"
-                type="text"
-                name="name"
-                autocomplete="name"
-                required
-              >
-            </div>
-
-            <div class="field">
-              <label for="quote-phone">
-                Phone number *
-              </label>
-
-              <input
-                id="quote-phone"
-                type="tel"
-                name="phone"
-                autocomplete="tel"
-                required
-              >
-            </div>
-
-            <div class="field">
-              <label for="quote-email">
-                Email address
-              </label>
-
-              <input
-                id="quote-email"
-                type="email"
-                name="email"
-                autocomplete="email"
-              >
-            </div>
-
-            <div class="field">
-              <label for="quote-city">
-                City *
-              </label>
-
-              <input
-                id="quote-city"
-                type="text"
-                name="city"
-                autocomplete="address-level2"
-                required
-              >
-            </div>
-
-            <div class="field field-full">
-              <label for="quote-service">
-                Service needed *
-              </label>
-
-              <select
-                id="quote-service"
-                name="service"
-                required
-              >
-                <option value="">
-                  Select a service
-                </option>
-
-                <option value="Solar panel cleaning">
-                  Solar panel cleaning
-                </option>
-
-                <option value="Solar cleaning and bird proofing">
-                  Solar cleaning and bird proofing
-                </option>
-
-                <option value="Commercial solar cleaning">
-                  Commercial solar cleaning
-                </option>
-
-                <option value="Window washing">
-                  Window washing
-                </option>
-
-                <option value="Not sure yet">
-                  Not sure yet
-                </option>
-              </select>
-            </div>
-
-            <div class="field field-full">
-              <label for="quote-message">
-                Property or panel details
-              </label>
-
-              <textarea
-                id="quote-message"
-                name="message"
-                placeholder="Approximate panel count, roof access details, bird activity, or any other helpful information."
-              ></textarea>
-            </div>
-
-            <div
-              class="form-status"
-              id="form-status"
-              role="status"
-              aria-live="polite"
-            ></div>
-
-            <div class="field-full">
-              <button
-                class="button button-primary quote-submit"
-                type="submit"
-              >
-                Request My Free Quote
-              </button>
-            </div>
-
-            <p class="form-note">
-              Your information is used only to respond to your
-              quote request. For a photo estimate, text images to
-              (818) 850-5312.
-            </p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
+  <section class="section section-alt" id="process">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img
-            src="logo.png"
-            alt="Bright Panels Solar Cleaning"
-            onerror="this.style.display='none'"
-          >
 
-          <p>
-            Professional solar panel cleaning, bird proofing, and
-            exterior window washing throughout northern Los
-            Angeles County.
-          </p>
-        </div>
-
-        <div>
-          <h3>Services</h3>
-
-          <div class="footer-links">
-            <a href="#services">Solar panel cleaning</a>
-            <a href="#services">Commercial cleaning</a>
-            <a href="#services">Bird proofing</a>
-            <a href="#services">Window washing</a>
-          </div>
-        </div>
-
-        <div>
-          <h3>Contact</h3>
-
-          <div class="footer-links">
-            <a href="tel:8188505312">
-              (818) 850-5312
-            </a>
-
-            <a href="#contact">
-              Request a quote
-            </a>
-
-            <a href="#areas">
-              Service areas
-            </a>
-          </div>
-        </div>
+      <div class="section-heading center">
+        <div class="eyebrow">Simple Scheduling</div>
+        <h2>How the process works</h2>
       </div>
 
-      <div class="footer-bottom">
-        <span>
-          © 2026 Bright Panels Solar Cleaning. All rights reserved.
-        </span>
+      <div class="process-grid">
 
-        <span>
-          Antelope Valley · Santa Clarita Valley · San Fernando Valley
-        </span>
+        <article class="process-card">
+          <div class="process-number">1</div>
+          <h3>Send your details</h3>
+          <p>
+            Share your city, panel count, and any helpful roof or
+            access information.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">2</div>
+          <h3>Receive a quote</h3>
+          <p>
+            We provide straightforward pricing before scheduling.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">3</div>
+          <h3>Choose a service date</h3>
+          <p>
+            Select a convenient appointment.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="process-number">4</div>
+          <h3>Enjoy cleaner panels</h3>
+          <p>
+            Your solar system is left cleaner and better maintained.
+          </p>
+        </article>
+
       </div>
     </div>
-  </footer>
+  </section>
 
-  <div
-    class="mobile-actions"
-    aria-label="Mobile quick actions"
-  >
-    <a
-      class="mobile-call"
-      href="tel:8188505312"
-    >
-      Call or Text
-    </a>
+  <!-- REVIEWS -->
 
-    <a
-      class="mobile-quote"
-      href="#contact"
-    >
-      Free Quote
-    </a>
+  <section class="section" id="reviews">
+    <div class="container">
+
+      <div class="reviews-header">
+
+        <div class="section-heading" style="margin-bottom:0">
+          <div class="eyebrow">Customer Feedback</div>
+
+          <h2>
+            What customers say about Bright Panels
+          </h2>
+        </div>
+
+        <div class="review-summary">
+          <div class="stars">★★★★★</div>
+          <strong>Local customer service</strong>
+        </div>
+
+      </div>
+
+      <div class="reviews-grid">
+
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <blockquote>
+            Just had my solar panels cleaned and wanted to give a
+            shoutout for the great service. Super friendly,
+            professional, and more affordable than most quotes I
+            received. The difference was noticeable right away,
+            and the entire process was quick and hassle-free.
+          </blockquote>
+
+          <div class="reviewer">
+            <strong>Misty O.</strong>
+            <span>Palmdale, California</span>
+          </div>
+
+        </article>
+
+        <article class="review-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <blockquote>
+            Chris and his crew were amazing. Chris explained the
+            process so I could understand it, and they did an
+            amazing job. They even cleaned my gutters, picked up
+            the bird debris, and hosed down my patio. I would
+            highly recommend them.
+          </blockquote>
+
+          <div class="reviewer">
+            <strong>Gustavo C.</strong>
+            <span>Quartz Hill, California</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AREAS -->
+
+  <section class="section section-alt" id="areas">
+    <div class="container area-layout">
+
+      <div>
+
+        <div class="eyebrow">
+          Service Area
+        </div>
+
+        <div class="section-heading" style="margin-bottom:0">
+
+          <h2>
+            Serving communities across northern Los Angeles County
+          </h2>
+
+          <p>
+            Bright Panels provides solar panel cleaning, bird
+            proofing, and exterior window washing throughout the
+            following valleys and nearby communities.
+          </p>
+
+        </div>
+
+        <div class="area-list">
+          <span>Antelope Valley</span>
+          <span>Palmdale</span>
+          <span>Lancaster</span>
+          <span>Quartz Hill</span>
+          <span>Santa Clarita Valley</span>
+          <span>San Fernando Valley</span>
+        </div>
+
+      </div>
+
+      <aside class="area-card">
+
+        <h3>
+          Not sure whether your property is in range?
+        </h3>
+
+        <p>
+          Call or text your city and a few photos. We can usually
+          confirm availability and explain what information is
+          needed for pricing.
+        </p>
+
+        <a class="phone-link" href="tel:8188505312">
+          Call or text (818) 850-5312
+        </a>
+
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact-section" id="contact">
+    <div class="container contact-layout">
+
+      <div class="contact-copy">
+
+        <div class="eyebrow">
+          Free Quote
+        </div>
+
+        <h2>
+          Ready for cleaner, better-protected solar panels?
+        </h2>
+
+        <p>
+          Complete the form to request a quote. For the fastest
+          photo estimate, text your city, panel count, and panel
+          photos directly to our number.
+        </p>
+
+        <div class="contact-details">
+
+          <a href="tel:8188505312">
+            <b>Phone:</b> (818) 850-5312
+          </a>
+
+          <span>
+            <b>Services:</b>
+            Solar cleaning, bird proofing, and window washing
+          </span>
+
+          <span>
+            <b>Coverage:</b>
+            Antelope, Santa Clarita, and San Fernando valleys
+          </span>
+
+        </div>
+
+      </div>
+
+      <div class="quote-card">
+
+        <h3>
+          Request your free quote
+        </h3>
+
+        <p class="quote-intro">
+          Required fields are marked with an asterisk.
+        </p>
+
+        <form
+          class="quote-form"
+          id="quote-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+
+          <input
+            type="hidden"
+            name="access_key"
+            value="f242b5e1-1973-4fb3-baa8-cb762a3ffb67"
+          >
+
+          <input
+            type="hidden"
+            name="subject"
+            value="New Quote Request - Bright Panels Solar Cleaning"
+          >
+
+          <input
+            type="hidden"
+            name="from_name"
+            value="Bright Panels Website"
+          >
+
+          <input
+            type="checkbox"
+            name="botcheck"
+            tabindex="-1"
+            autocomplete="off"
+            style="display:none"
+          >
+
+          <div class="field">
+            <label for="quote-name">
+              Your name *
+            </label>
+
+            <input
+              id="quote-name"
+              type="text"
+              name="name"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label for="quote-phone">
+              Phone number *
+            </label>
+
+            <input
+              id="quote-phone"
+              type="tel"
+              name="phone"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label for="quote-email">
+              Email address
+            </label>
+
+            <input
+              id="quote-email"
+              type="email"
+              name="email"
+            >
+          </div>
+
+          <div class="field">
+            <label for="quote-city">
+              City *
+            </label>
+
+            <input
+              id="quote-city"
+              type="text"
+              name="city"
+              required
+            >
+          </div>
+
+          <div class="field field-full">
+            <label for="quote-service">
+              Service needed *
+            </label>
+
+            <select
+              id="quote-service"
+              name="service"
+              required
+            >
+
+              <option value="">
+                Select a service
+              </option>
+
+              <option value="Solar panel cleaning">
+                Solar panel cleaning
+              </option>
+
+              <option value="Solar cleaning and bird proofing">
+                Solar cleaning and bird proofing
+              </option>
+
+              <option value="Bird proofing">
+                Bird proofing
+              </option>
+
+              <option value="Commercial solar cleaning">
+                Commercial solar cleaning
+              </option>
+
+              <option value="Window washing">
+                Window washing
+              </option>
+
+              <option value="Not sure yet">
+                Not sure yet
+              </option>
+
+            </select>
+          </div>
+
+          <div class="field field-full">
+            <label for="quote-message">
+              Property or panel details
+            </label>
+
+            <textarea
+              id="quote-message"
+              name="message"
+              placeholder="Approximate panel count, roof access details, bird activity, or other helpful information."
+            ></textarea>
+          </div>
+
+          <div
+            class="form-status"
+            id="form-status"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+          <div class="field-full">
+            <button
+              class="button button-primary quote-submit"
+              type="submit"
+            >
+              Request My Free Quote
+            </button>
+          </div>
+
+          <p class="form-note">
+            Your information is used only to respond to your quote
+            request. For a photo estimate, text images to
+            (818) 850-5312.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+
+        <img
+          src="logo.png"
+          alt="Bright Panels Solar Cleaning"
+          onerror="this.style.display='none'"
+        >
+
+        <p>
+          Professional solar panel cleaning, bird proofing, and
+          exterior window washing throughout northern Los Angeles
+          County.
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3>Services</h3>
+
+        <div class="footer-links">
+          <a href="#solar-cleaning">Solar panel cleaning</a>
+          <a href="#bird-proofing">Bird proofing</a>
+          <a href="#services">Commercial cleaning</a>
+          <a href="#services">Window washing</a>
+        </div>
+
+      </div>
+
+      <div>
+
+        <h3>Contact</h3>
+
+        <div class="footer-links">
+
+          <a href="tel:8188505312">
+            (818) 850-5312
+          </a>
+
+          <a href="#contact">
+            Request a quote
+          </a>
+
+          <a href="#areas">
+            Service areas
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>
+        © 2026 Bright Panels Solar Cleaning. All rights reserved.
+      </span>
+
+      <span>
+        Antelope Valley · Santa Clarita Valley · San Fernando Valley
+      </span>
+    </div>
+
   </div>
+</footer>
 
-  <!-- Mobile navigation -->
-  <script>
-    (function () {
-      const menuButton = document.querySelector(".menu-button");
-      const navigation = document.querySelector(".nav-links");
-      const navigationLinks = document.querySelectorAll(
-        ".nav-links a"
-      );
+<div class="mobile-actions">
 
-      if (!menuButton || !navigation) {
-        return;
-      }
+  <a
+    class="mobile-call"
+    href="tel:8188505312"
+  >
+    Call or Text
+  </a>
 
-      function closeMenu() {
-        navigation.classList.remove("open");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute(
-          "aria-label",
-          "Open navigation menu"
+  <a
+    class="mobile-quote"
+    href="#contact"
+  >
+    Free Quote
+  </a>
+
+</div>
+
+<!-- MOBILE NAV -->
+<script>
+(function () {
+  const button = document.querySelector(".menu-button");
+  const nav = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links a");
+
+  if (!button || !nav) return;
+
+  function closeMenu() {
+    nav.classList.remove("open");
+    button.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+  }
+
+  button.addEventListener("click", function () {
+    const open = nav.classList.toggle("open");
+
+    button.setAttribute(
+      "aria-expanded",
+      String(open)
+    );
+
+    document.body.classList.toggle(
+      "menu-open",
+      open
+    );
+  });
+
+  links.forEach(function (link) {
+    link.addEventListener("click", closeMenu);
+  });
+})();
+</script>
+
+<!-- MOBILE MANUFACTURER CONTROLS -->
+<script>
+(function () {
+  const manufacturerToggle = document.querySelector(
+    ".mobile-manufacturer-toggle"
+  );
+
+  const manufacturerGrid = document.querySelector(
+    ".manufacturer-grid"
+  );
+
+  if (manufacturerToggle && manufacturerGrid) {
+    manufacturerToggle.addEventListener(
+      "click",
+      function () {
+        const open = manufacturerGrid.classList.toggle(
+          "show-all"
         );
-        document.body.classList.remove("menu-open");
-      }
 
-      menuButton.addEventListener("click", function () {
-        const isOpen = navigation.classList.toggle("open");
-
-        menuButton.setAttribute(
+        manufacturerToggle.setAttribute(
           "aria-expanded",
-          String(isOpen)
+          String(open)
         );
 
-        menuButton.setAttribute(
-          "aria-label",
-          isOpen
-            ? "Close navigation menu"
-            : "Open navigation menu"
-        );
-
-        document.body.classList.toggle(
-          "menu-open",
-          isOpen
-        );
-      });
-
-      navigationLinks.forEach(function (link) {
-        link.addEventListener("click", closeMenu);
-      });
-
-      window.addEventListener("resize", function () {
-        if (window.innerWidth > 1020) {
-          closeMenu();
-        }
-      });
-    })();
-  </script>
-
-  <!-- Mobile manufacturer controls -->
-  <script>
-    (function () {
-      const manufacturerToggle = document.querySelector(
-        ".mobile-manufacturer-toggle"
-      );
-
-      const manufacturerGrid = document.querySelector(
-        ".manufacturer-grid"
-      );
-
-      if (manufacturerToggle && manufacturerGrid) {
-        manufacturerToggle.addEventListener(
-          "click",
-          function () {
-            const isOpen = manufacturerGrid.classList.toggle(
-              "show-all"
-            );
-
-            manufacturerToggle.setAttribute(
-              "aria-expanded",
-              String(isOpen)
-            );
-
-            manufacturerToggle.textContent = isOpen
-              ? "Show Less Manufacturer Guidance"
-              : "View More Manufacturer Guidance";
-          }
-        );
+        manufacturerToggle.textContent = open
+          ? "Show Less Manufacturer Guidance"
+          : "View More Manufacturer Guidance";
       }
+    );
+  }
 
-      const evidenceToggle = document.querySelector(
-        ".mobile-evidence-toggle"
-      );
+  const evidenceToggle = document.querySelector(
+    ".mobile-evidence-toggle"
+  );
 
-      const evidencePanel = document.querySelector(
-        ".evidence-panel"
-      );
+  const evidencePanel = document.querySelector(
+    ".evidence-panel"
+  );
 
-      if (evidenceToggle && evidencePanel) {
-        evidenceToggle.addEventListener(
-          "click",
-          function () {
-            const isOpen = evidencePanel.classList.toggle(
-              "show-evidence"
-            );
-
-            evidenceToggle.setAttribute(
-              "aria-expanded",
-              String(isOpen)
-            );
-
-            evidenceToggle.textContent = isOpen
-              ? "Hide Official Source Excerpts"
-              : "View Official Source Excerpts";
-          }
-        );
-      }
-    })();
-  </script>
-
-  <!-- Quote form -->
-  <script>
-    (function () {
-      const form = document.getElementById("quote-form");
-      const status = document.getElementById("form-status");
-
-      if (!form || !status) {
-        return;
-      }
-
-      form.addEventListener("submit", async function (event) {
-        event.preventDefault();
-
-        const submitButton = form.querySelector(
-          'button[type="submit"]'
+  if (evidenceToggle && evidencePanel) {
+    evidenceToggle.addEventListener(
+      "click",
+      function () {
+        const open = evidencePanel.classList.toggle(
+          "show-evidence"
         );
 
-        const originalButtonText = submitButton.textContent;
+        evidenceToggle.setAttribute(
+          "aria-expanded",
+          String(open)
+        );
 
-        status.className = "form-status";
-        status.textContent = "";
+        evidenceToggle.textContent = open
+          ? "Hide Official Source Excerpts"
+          : "View Official Source Excerpts";
+      }
+    );
+  }
+})();
+</script>
 
-        submitButton.disabled = true;
-        submitButton.textContent = "Sending Quote Request...";
+<!-- QUOTE FORM -->
+<script>
+(function () {
+  const form = document.getElementById("quote-form");
+  const status = document.getElementById("form-status");
 
-        try {
-          const response = await fetch(form.action, {
+  if (!form || !status) return;
+
+  form.addEventListener(
+    "submit",
+    async function (event) {
+      event.preventDefault();
+
+      const submitButton = form.querySelector(
+        'button[type="submit"]'
+      );
+
+      const originalButtonText =
+        submitButton.textContent;
+
+      status.className = "form-status";
+      status.textContent = "";
+
+      submitButton.disabled = true;
+      submitButton.textContent =
+        "Sending Quote Request...";
+
+      try {
+        const response = await fetch(
+          form.action,
+          {
             method: "POST",
             body: new FormData(form),
             headers: {
               Accept: "application/json"
             }
-          });
-
-          const result = await response.json();
-
-          if (!response.ok || !result.success) {
-            throw new Error(
-              result.message ||
-              "The quote request could not be sent."
-            );
           }
+        );
 
-          status.className = "form-status success";
+        const result = await response.json();
 
-          status.textContent =
-            "Thank you. Your quote request was sent successfully. Bright Panels will contact you soon.";
+        if (!response.ok || !result.success) {
+          throw new Error(
+            result.message ||
+            "The quote request could not be sent."
+          );
+        }
 
-          form.reset();
+        status.className =
+          "form-status success";
 
-          if (typeof window.fbq === "function") {
-            window.fbq("track", "Lead");
-          }
+        status.textContent =
+          "Thank you. Your quote request was sent successfully. Bright Panels will contact you soon.";
 
-          if (typeof window.gtag === "function") {
-            window.gtag("event", "generate_lead", {
+        form.reset();
+
+        if (typeof window.fbq === "function") {
+          window.fbq("track", "Lead");
+        }
+
+        if (typeof window.gtag === "function") {
+          window.gtag(
+            "event",
+            "generate_lead",
+            {
               event_category: "Quote Form",
               event_label: "Bright Panels Website Quote"
-            });
-          }
-        } catch (error) {
-          console.error(
-            "Quote form submission error:",
-            error
+            }
           );
-
-          status.className = "form-status error";
-
-          status.textContent =
-            "Your request could not be sent. Please call or text Bright Panels at (818) 850-5312.";
-        } finally {
-          submitButton.disabled = false;
-          submitButton.textContent = originalButtonText;
         }
-      });
-    })();
-  </script>
+
+      } catch (error) {
+        console.error(
+          "Quote form submission error:",
+          error
+        );
+
+        status.className =
+          "form-status error";
+
+        status.textContent =
+          "Your request could not be sent. Please call or text Bright Panels at (818) 850-5312.";
+
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent =
+          originalButtonText;
+      }
+    }
+  );
+})();
+</script>
+
 </body>
 </html>
