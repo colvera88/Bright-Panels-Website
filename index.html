@@ -711,7 +711,47 @@
       color: var(--yellow);
       font-weight: 900;
     }
+.service-warranty {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 13px;
+  align-items: center;
+  margin: 20px 0 26px;
+  padding: 17px 18px;
+  background: #fff7df;
+  border: 1px solid #f0cf7a;
+  border-left: 4px solid var(--yellow);
+  border-radius: 12px;
+}
 
+.service-warranty-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  color: var(--navy);
+  background: var(--yellow-light);
+  border-radius: 50%;
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.service-warranty strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--navy);
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.service-warranty span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
     .service-detail-actions {
       display: flex;
       gap: 12px;
@@ -2166,45 +2206,59 @@
           or debris beneath the panels.
         </div>
 
-        <div class="service-checks">
+<div class="service-checks">
 
-          <div class="service-check">
-            Bird-activity assessment
-          </div>
+  <div class="service-check">
+    Bird-activity assessment
+  </div>
 
-          <div class="service-check">
-            Accessible nesting-debris removal
-          </div>
+  <div class="service-check">
+    Accessible nesting-debris removal
+  </div>
 
-          <div class="service-check">
-            Solar panel cleaning
-          </div>
+  <div class="service-check">
+    Solar panel cleaning
+  </div>
 
-          <div class="service-check">
-            Protective perimeter mesh
-          </div>
+  <div class="service-check">
+    Protective perimeter mesh
+  </div>
 
-          <div class="service-check">
-            Careful fitting around array edges
-          </div>
+  <div class="service-check">
+    Careful fitting around array edges
+  </div>
 
-          <div class="service-check">
-            Finished-service photos
-          </div>
+  <div class="service-check">
+    Finished-service photos
+  </div>
 
-        </div>
+</div>
 
-        <div class="service-detail-actions">
+<!-- BIRD PROOFING WARRANTY -->
+<div class="service-warranty">
+  <div class="service-warranty-icon" aria-hidden="true">✓</div>
 
-          <a class="button button-primary" href="#contact">
-            Get a Bird Proofing Quote
-          </a>
+  <div>
+    <strong>5-Year Bird Proofing Mesh Warranty</strong>
 
-          <a class="text-link" href="#results">
-            See real project results →
-          </a>
+    <span>
+      Our installed bird-proofing mesh is backed by a
+      5-year warranty for added peace of mind.
+    </span>
+  </div>
+</div>
 
-        </div>
+<div class="service-detail-actions">
+
+  <a class="button button-primary" href="#contact">
+    Get a Bird Proofing Quote
+  </a>
+
+  <a class="text-link" href="#results">
+    See real project results →
+  </a>
+
+</div>
 
       </div>
 
