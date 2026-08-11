@@ -1240,11 +1240,73 @@
       letter-spacing: 3px;
     }
 
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 22px;
-    }
+.reviews-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.reviews-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.45s ease;
+}
+
+.reviews-track .review-card {
+  flex: 0 0 calc((100% - 40px) / 3);
+  min-width: 0;
+}
+
+.review-arrow {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: #fff;
+  background: var(--blue);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.8rem;
+  line-height: 1;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.review-arrow:hover {
+  background: var(--blue-dark);
+  transform: scale(1.05);
+}
+
+.review-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.review-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background: #cad6e4;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.review-dot.active {
+  width: 22px;
+  background: var(--blue);
+  border-radius: 999px;
+}
 
     .review-card {
       padding: 32px;
@@ -1807,21 +1869,26 @@
         margin-top: 24px;
       }
 
-      .reviews-grid {
-        display: flex;
-        gap: 16px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        padding: 4px 14px 20px;
-        margin-inline: -14px;
-        scrollbar-width: none;
-      }
+.reviews-carousel {
+  gap: 8px;
+}
 
-      .review-card {
-        flex: 0 0 88%;
-        scroll-snap-align: start;
-        padding: 24px;
-      }
+.reviews-track {
+  gap: 14px;
+}
+
+.reviews-track .review-card {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding: 24px;
+}
+
+.review-arrow {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  font-size: 1.5rem;
+}
 
       .quote-card {
         padding: 25px 20px;
@@ -2998,7 +3065,17 @@
 
       </div>
 
-      <div class="reviews-grid">
+      <div class="reviews-carousel">
+
+  <button
+    class="review-arrow review-arrow-prev"
+    type="button"
+    aria-label="Previous reviews">
+    ‹
+  </button>
+
+  <div class="reviews-viewport">
+    <div class="reviews-track">
 
         <article class="review-card">
 
@@ -3041,8 +3118,93 @@
           </div>
 
         </article>
+<!-- TIM KELLEY -->
+<article class="review-card">
+  <div class="review-stars" aria-label="5 out of 5 stars">
+    ★★★★★
+  </div>
 
-      </div>
+  <p class="review-text">
+    “Chris was great, responsive and did a fantastic job.
+    The washed solar panels look great and the roof is nice and clean.”
+  </p>
+
+  <div class="review-author">
+    <strong>Tim Kelley</strong>
+    <span>Google Review</span>
+  </div>
+</article>
+
+
+<!-- JEFFREY PORTUGAL -->
+<article class="review-card">
+  <div class="review-stars" aria-label="5 out of 5 stars">
+    ★★★★★
+  </div>
+
+  <div class="review-highlight">Great price</div>
+
+  <p class="review-text">
+    “Christopher did a great job! I shopped around for competitive
+    pricing and knowledge, Bright Panels Solar Cleaning A+ Hands down!
+    Quick response and professional service, Thank you!”
+  </p>
+
+  <div class="review-author">
+    <strong>Jeffrey Portugal</strong>
+    <span>Google Review</span>
+  </div>
+</article>
+
+
+<!-- MIGUEL MARTINEZ -->
+<article class="review-card">
+  <div class="review-stars" aria-label="5 out of 5 stars">
+    ★★★★★
+  </div>
+
+  <p class="review-text">
+    “Excellent service and professional work ethic by Christopher
+    definitely calling Bright Panels Solar Cleaning LLC for future work
+    💯 satisfied happy customer and excellent customer service.”
+  </p>
+
+  <div class="review-author">
+    <strong>Miguel Martinez</strong>
+    <span>Google Review</span>
+  </div>
+</article>
+
+
+<!-- LIZETTE RODRIGUEZ -->
+<article class="review-card">
+  <div class="review-stars" aria-label="5 out of 5 stars">
+    ★★★★★
+  </div>
+
+  <p class="review-text">
+    “The 3 guys did a nice work cleaning the solar panels they have
+    some nice service and they are actually very nice too.”
+  </p>
+
+  <div class="review-author">
+    <strong>Lizette Rodriguez</strong>
+    <span>Google Review</span>
+  </div>
+</article>
+          </div>
+  </div>
+
+  <button
+    class="review-arrow review-arrow-next"
+    type="button"
+    aria-label="Next reviews">
+    ›
+  </button>
+
+</div>
+
+<div class="review-dots" aria-label="Review navigation"></div>
 
     </div>
   </section>
@@ -3603,6 +3765,146 @@
   );
 })();
 </script>
+<!-- Existing website JavaScript -->
+<script>
+  // your existing website JS
+</script>
 
+
+<!-- REVIEW CAROUSEL JAVASCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const track = document.querySelector(".reviews-track");
+  const cards = document.querySelectorAll(".reviews-track .review-card");
+  const prevButton = document.querySelector(".review-arrow-prev");
+  const nextButton = document.querySelector(".review-arrow-next");
+  const dotsContainer = document.querySelector(".review-dots");
+
+  if (!track || !cards.length || !prevButton || !nextButton) return;
+
+  let currentIndex = 0;
+  let autoPlay;
+
+  function cardsPerView() {
+    return window.innerWidth <= 760 ? 1 : 3;
+  }
+
+  function maxIndex() {
+    return Math.max(0, cards.length - cardsPerView());
+  }
+
+  function updateCarousel() {
+    const gap = window.innerWidth <= 760 ? 14 : 20;
+    const cardWidth = cards[0].getBoundingClientRect().width;
+
+    if (currentIndex > maxIndex()) {
+      currentIndex = maxIndex();
+    }
+
+    track.style.transform =
+      `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+
+    updateDots();
+  }
+
+  function createDots() {
+    if (!dotsContainer) return;
+
+    dotsContainer.innerHTML = "";
+
+    const totalPositions = maxIndex() + 1;
+
+    for (let i = 0; i < totalPositions; i++) {
+      const dot = document.createElement("button");
+
+      dot.type = "button";
+      dot.className = "review-dot";
+      dot.setAttribute("aria-label", `Show review ${i + 1}`);
+
+      dot.addEventListener("click", function () {
+        currentIndex = i;
+        updateCarousel();
+        restartAutoPlay();
+      });
+
+      dotsContainer.appendChild(dot);
+    }
+
+    updateDots();
+  }
+
+  function updateDots() {
+    if (!dotsContainer) return;
+
+    const dots = dotsContainer.querySelectorAll(".review-dot");
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentIndex);
+    });
+  }
+
+  function nextReview() {
+    if (currentIndex >= maxIndex()) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+
+    updateCarousel();
+  }
+
+  function previousReview() {
+    if (currentIndex <= 0) {
+      currentIndex = maxIndex();
+    } else {
+      currentIndex--;
+    }
+
+    updateCarousel();
+  }
+
+  function startAutoPlay() {
+    autoPlay = setInterval(nextReview, 6500);
+  }
+
+  function stopAutoPlay() {
+    clearInterval(autoPlay);
+  }
+
+  function restartAutoPlay() {
+    stopAutoPlay();
+    startAutoPlay();
+  }
+
+  nextButton.addEventListener("click", function () {
+    nextReview();
+    restartAutoPlay();
+  });
+
+  prevButton.addEventListener("click", function () {
+    previousReview();
+    restartAutoPlay();
+  });
+
+  const carousel = document.querySelector(".reviews-carousel");
+
+  carousel.addEventListener("mouseenter", stopAutoPlay);
+  carousel.addEventListener("mouseleave", startAutoPlay);
+
+  window.addEventListener("resize", function () {
+    createDots();
+    updateCarousel();
+  });
+
+  createDots();
+  updateCarousel();
+  startAutoPlay();
+
+});
+</script>
+
+</body>
+</html>
 </body>
 </html>
